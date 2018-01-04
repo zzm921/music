@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>假装搜歌放歌下歌的网页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/lanrenzhijia.css" type="text/css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="music-player">
+            <div class="info">
+                <div class="left"> <a href="javascript:;" class="icon-shuffle"></a> <a href="javascript:;" class="icon-heart"></a> </div>
+                <div class="center">
+                    <div class="jp-playlist">
+                        <ul>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="right"> <a href="javascript:;" class="icon-repeat"></a> <a href="javascript:;" class="icon-share"></a> </div>
+                <div class="progress jp-seek-bar"> <span class="jp-play-bar" style="width: 0%"></span> </div>
+            </div>
+            <div class="controls">
+                <div class="current jp-current-time">00:00</div>
+                <div class="play-controls">
+                    <a href="javascript:;" class="icon-previous jp-previous" title="previous"></a>
+                    <a href="javascript:;" class="icon-play jp-play" title="play"></a>
+                    <a href="javascript:;" class="icon-pause jp-pause" title="pause"></a>
+                    <a href="javascript:;" class="icon-next jp-next" title="next"></a>
+                </div>
+                <div class="volume-level jp-volume-bar">
+                    <span class="jp-volume-bar-value" style="width: 0%"></span>
+                    <a href="javascript:;" class="icon-volume-up jp-volume-max" title="max volume"></a>
+                    <a href="javascript:;" class="icon-volume-down jp-mute" title="mute"></a>
+                </div>
+            </div>
+            <div id="jquery_jplayer" class="jp-jplayer"></div>
+        </div>
+        <div style="text-align: center;">
+            <form role="form" class="form-inline">
+                <div class="form-group">
+                    <input type="text " class="form-control " id="key" placeholder="请输入关键词 " />
+                    <input class="btn btn-default" type="button" value="搜索" id="searchBtn">
+                </div>
+            </form>
+
+        </div>
+        <table class="table table-hover" id="result"></table>
+    </div>
+    <script src="js/jquery.min.js "></script>
+    <script src='js/jquery.jplayer.min.js'></script>
+    <script src='js/jplayer.playlist.min.js'></script>
+    <script src="js/bootstrap.min.js "></script>
+    <script src="js/index.js "></script>
+
+</body>
+
+</html>
